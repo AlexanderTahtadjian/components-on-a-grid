@@ -29,10 +29,16 @@ assign cells to their grid-area however you name them.  for example:
 
 .body {
   display: grid;
+  grid-template-columns: 50%, 50%;
+  grid-gap: 1rem:
 }
 
 .pano {
   grid-area: value;
+}
+
+figure {
+  grid-column: 1/2;
 }
 
 img {
