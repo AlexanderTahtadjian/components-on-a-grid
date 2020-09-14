@@ -15,4 +15,9 @@ img {
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+  font-family: "Patua One";
+}
+
+ul {
+  list-style-type: none;
 }
