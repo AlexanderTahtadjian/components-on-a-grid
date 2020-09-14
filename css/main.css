@@ -31,6 +31,16 @@ header {
   transform: translate(-275%, 350%);
 }
 
+h2 {
+  font-family: "Patua One";
+  color: #30658d;
+}
+
+p {
+  font-family: Georgia;
+  color: #000;
+}
+
 ul {
   list-style-type: none;
 }
