@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   background-color: #f2f1ed;
   font-family: Georgia, serif;
-  line-height: 1.5
+  line-height: 1.5;
 }
 
 *,
@@ -10,24 +10,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-/*
-You need to make the body your grid
-
-.body {
-display: grid;
-
--define columns using grid-template-columns selector (using the fr value and number of columns you want)
--define your grid layout using the grid-template-areas selector. See the notes under the CSS videos for a refresher.
-*/
-
-/*
-assign cells to their grid-area however you name them.  for example:
-
-.pano {
-  grid-area: value;
-}
- (Whatever makes the most sense to you to name the value.  See the notes about grid-area)
-*/
 
 .body {
   display: grid;
@@ -71,11 +53,8 @@ header {
   grid-column: 2;
   grid-row: 2;
   z-index: 1;
-  margin-left: 1rem; /*use margins*/
-  margin-right: 1rem; /*use margins*/
-  /*
-    You want to you the grid-columns and grid-row selector and z-index to achieve this. Remember that you can put multiple items into the same grid cell using these selectors.
-  */
+  margin-left: 1rem;  /*use margins*/
+  margin-right: 1rem;  /*use margins*/
 }
 
 .main figure {
