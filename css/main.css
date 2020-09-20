@@ -12,11 +12,12 @@ html {
 }
 
 body {
+  margin: 0;
   display: grid;
   grid-template-areas:
-  "masthead masthead toolbar"
-  "main     main     sidebar"
-  "footer   footer   sidebar";
+    "masthead masthead toolbar"
+    "main     main     sidebar"
+    "footer   footer   sidebar";
 }
 
 main {
@@ -60,8 +61,8 @@ header {
   grid-column: 2;
   grid-row: 2;
   z-index: 1;
-  margin-left: 1rem;  /*use margins*/
-  margin-right: 1rem;  /*use margins*/
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .main figure {
