@@ -21,8 +21,8 @@ body {
 }
 
 main {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 1rem;
 }
 
@@ -38,7 +38,6 @@ img {
 }
 
 header {
-  /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
   font-family: "Patua One", sans-serif;
 }
