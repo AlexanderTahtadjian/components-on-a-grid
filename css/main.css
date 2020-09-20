@@ -1,6 +1,8 @@
 html {
   box-sizing: border-box;
   background-color: #f2f1ed;
+  font-family: Georgia, sans-serif;
+  line-height: 1.5
 }
 
 *,
@@ -71,10 +73,9 @@ header {
   z-index: 1;
   margin-left: 1rem; /*use margins*/
   margin-right: 1rem; /*use margins*/
-/*
-You want to you the grid-columns and grid-row selector and z-index to achieve this. Remember that you can put multiple items into the same grid cell using these selectors.
-*/
-
+  /*
+    You want to you the grid-columns and grid-row selector and z-index to achieve this. Remember that you can put multiple items into the same grid cell using these selectors.
+  */
 }
 
 .main figure {
