@@ -28,8 +28,8 @@ main {
 
 .pano {
   grid-area: value;
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
   z-index: 1;
 }
 
