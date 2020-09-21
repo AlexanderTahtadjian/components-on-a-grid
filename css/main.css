@@ -24,13 +24,11 @@ body {
 main {
   display: contents;
   /* remove child elements out of this parent element to be placed around on the grid (such as the figures) */
-}
 
-/* main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 1rem;
-} */
+}
 
 .pano {
   grid-area: value;
