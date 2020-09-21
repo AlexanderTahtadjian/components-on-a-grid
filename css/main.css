@@ -15,9 +15,8 @@ body {
   margin: 0;
   display: grid;
   grid-template-areas:
-  "masthead masthead toolbar"
-  "main     main     sidebar"
-  "footer   footer   sidebar";
+  "masthead masthead"
+  "main main2" ;
 }
 
 main {
@@ -25,14 +24,8 @@ main {
   /* remove child elements out of this parent element to be placed around on the grid (such as the figures) */
 }
 
-figure {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 1rem;
-}
-
 .pano {
-  grid-area: value;
+  grid-area: masthead;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   z-index: -1;
