@@ -14,17 +14,10 @@ html {
 body {
   margin: 0;
   display: grid;
-
   grid-template-areas:
-    "masthead masthead"
-    "main1 main2";
-    /* You want this to visually match your layout */
-
-
-  /* grid-template-areas:
-    "masthead masthead toolbar"
-    "main     main     sidebar"
-    "footer   footer   sidebar"; */
+  "masthead masthead toolbar"
+  "main     main     sidebar"
+  "footer   footer   sidebar";
 }
 
 
@@ -68,10 +61,7 @@ header {
 
 .logo {
   width: 14rem;
-  /* left: 50%; Remove
-  top: 50%; */
   grid-column: 2;
-  /* grid-row: 2;  Remove, put this in row one, use align-self to place it in the cell*/
   z-index: 1;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -98,13 +88,9 @@ ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  /* position: absolute;  REMOVE*/
   width: 14rem;
-  /* left: 50%;
-  top: 50%;   REMOVE*/
   padding-left: 1rem;
   padding-right: 1rem;
-  /* transform: translate(-1%, -475%); REMOVE */
 }
 
 li {
