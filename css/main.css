@@ -14,9 +14,12 @@ html {
 body {
   margin: 0;
   display: grid;
+  padding: 1rem;
+  grid-gap: 1rem;
   grid-template-areas:
   "masthead masthead"
-  "main main2" ;
+  "main main2";
+  grid-template-columns: 1fr 1fr;
 }
 
 main {
@@ -26,9 +29,6 @@ main {
 
 .pano {
   grid-area: masthead;
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  z-index: -1;
 }
 
 img {
@@ -40,31 +40,26 @@ header {
   font-family: "Patua One", sans-serif;
 }
 
-.banner {
-  display: grid;
-  grid-area: main;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1rem;
-}
-
 .banner img {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
+  grid-area: masthead;
 }
 
 .logo {
   width: 14rem;
-  grid-column: 2;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: end;
   z-index: 1;
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-.main figure {
+figure:first-child {
+  grid-area: main;
+}
+
+figure:last-child {
   grid-area: main2;
-  grid-column: 2;
-  grid-row: 2;
-  z-index: 1;
 }
 
 h2 {
@@ -75,6 +70,11 @@ h2 {
 p {
   font-family: Georgia;
   color: #000;
+}
+
+nav {
+  grid-column: 2/-1;
+  grid-row: 1;
 }
 
 ul {
