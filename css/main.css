@@ -17,14 +17,13 @@ body {
   padding: 1rem;
   grid-gap: 1rem;
   grid-template-areas:
-  "masthead masthead"
-  "main main2";
+    "masthead masthead"
+    "main main2";
   grid-template-columns: 1fr 1fr;
 }
 
 main {
   display: contents;
-  /* remove child elements out of this parent element to be placed around on the grid (such as the figures) */
 }
 
 .pano {
@@ -50,16 +49,17 @@ header {
   grid-row: 1;
   align-self: end;
   z-index: 1;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 0 1rem 1rem;
 }
 
 figure:first-child {
   grid-area: main;
+  margin: 0;
 }
 
 figure:last-child {
   grid-area: main2;
+  margin: 0;
 }
 
 h2 {
@@ -83,6 +83,7 @@ ul {
   display: flex;
   justify-content: space-between;
   width: 14rem;
+  margin: 0;
   padding-left: 1rem;
   padding-right: 1rem;
 }
